@@ -15,7 +15,7 @@ def select_name_and_series_subgenres_of_authors
   "SELECT author.name, subgenre.name FROM series 
   JOIN series.author_id = author.id 
   JOIN series.subgenre_id = subgenre.id
-  GROUP BY author.name;"
+  GROUP BY author.id;"
 end
 
 def select_series_title_with_most_human_characters
